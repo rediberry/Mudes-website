@@ -1,0 +1,486 @@
+.hero-donaciones {
+    background-image: url(../assets/Donaciones.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 40vh;
+    padding: 0 0;
+}
+
+.main-donaciones {
+    padding: 0 0;
+
+    .main-donaciones-text {
+        padding: 2rem 1rem;
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--grey-55);
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 15px 0;
+            color: var(--grey-55);
+        }
+    }
+
+    .recaudacion-container {
+        background-color: var(--grey-2);
+        padding: 2rem 1rem;
+
+        .recaudacion-title {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .recaudacion-sub-title {
+            padding-top: 1rem;
+
+            h3 {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .recaudacion-paragraph {
+            padding-top: .5rem;
+
+            p {
+                color: var(--grey-55);
+                font-weight: 400;
+            }
+        }
+
+        .donaciones-grafico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 65%;
+            }
+        }
+
+        .donaciones-cifras {
+            .single-cifra-pink {
+                border-left: var(--primaryColor600) 4px solid;
+                padding: 0 .5rem;
+                margin: 1rem 0;
+
+                span {
+                    font-weight: 900;
+                    font-size: 2.2rem;
+                    color: var(--primaryColor600);
+                }
+
+                p {
+                    font-size: small;
+                    color: var(--grey-55);
+                }
+            }
+
+            .single-cifra-blue {
+                border-left: var(--blue) 4px solid;
+                padding: 0 .5rem;
+                margin: 1rem 0;
+
+                span {
+                    font-weight: 900;
+                    font-size: 2.2rem;
+                    color: var(--blue);
+                }
+
+                p {
+                    font-size: small;
+                    color: var(--grey-55);
+                }
+            }
+
+            .single-cifra-red {
+                border-left: var(--red) 4px solid;
+                padding: 0 .5rem;
+                margin: 1rem 0;
+
+                span {
+                    font-weight: 900;
+                    font-size: 2.2rem;
+                    color: var(--red);
+                }
+
+                p {
+                    font-size: small;
+                    color: var(--grey-55);
+                }
+            }
+        }
+    }
+
+    .imagen-container {
+        img {
+            width: 100%;
+        }
+    }
+
+    .apoya-container {
+        padding: 2rem 1rem;
+
+        .apoya-title {
+            h2 {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .apoya-paragraph {
+            padding: 1rem 0;
+
+            p {
+                color: var(--grey-55);
+                font-weight: 400;
+            }
+        }
+
+        .ver-datos-button {
+            .ver-datos-btn {
+                cursor: pointer;
+                color: var(--primaryColor50);
+                background: var(--primaryColor600);
+                border: transparent;
+                border-radius: var(--borderRadius);
+                letter-spacing: var(--letterSpacing);
+                width: 100%;
+                padding: 0.5rem 0;
+                box-shadow: var(--shadow-1);
+                transition: var(--transition);
+                display: inline-block;
+            }
+
+            .ver-datos-btn:hover {
+                background: var(--primaryColorHover);
+                box-shadow: var(--shadow-3);
+            }
+
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        .modal-body {
+                            .modal-block {
+                                padding-bottom: 1rem;
+
+                                h5 {
+                                    font-size: 1rem;
+                                    color: var(--grey-55);
+                                }
+
+                                p {
+                                    font-size: 1.125rem;
+                                    color: #010101;
+                                    margin-bottom: 0.5rem;
+                                }
+
+                                input {
+                                    font-size: 1.125rem;
+                                    color: #010101;
+                                    margin-bottom: 0.5rem;
+                                    font-weight: 400;
+                                    border-style: hidden;
+                                }
+
+                                i {
+                                    margin-left: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .hero-donaciones {
+        background-position: 80% 40%;
+        height: 360px;
+    }
+
+    .main-donaciones{
+        .main-donaciones-text{
+            text-align:start;
+            padding: 2rem 3.75rem 2rem 3.75rem;
+        }
+
+        .recaudacion-container{
+            padding: 4rem 3.75rem 4rem 3.75rem;
+            
+            .recaudacion-title{
+                text-align:initial;
+                padding-bottom: 2.5rem;
+            }
+
+            .container-father{
+                display:flex;
+                justify-content: space-between;
+
+                .container-one{
+                    flex-direction: column;
+                    max-width: 50%;
+                }
+                .container-two{
+                    width: 50%;
+
+                    .donaciones-grafico{
+                        height: 100%;
+
+                        img{
+                            max-width: 70%;
+                        }
+                    }
+                }
+            }
+
+            .donaciones-cifras{
+                padding: 2.25rem 1rem 0rem;
+                .test-grid {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 1rem;
+
+                    .single-cifra-pink, .single-cifra-blue{
+                        max-width: 60%;
+                    }
+                }
+                .three {
+                    max-width: 20%;
+                    margin-left: 35%;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .apoya-wrapper{
+            display: flex;
+
+            .imagen-container{
+                width:45%;
+                order: 2;
+
+                img{
+                    height: auto;
+                }
+            }
+
+            @supports(object-fit: cover){
+                .imagen-container img{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .apoya-container{
+                padding: 6.23rem 3.75rem 6.23rem;
+                width:55%;
+                order: 1;
+
+                .apoya-title{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main-donaciones{
+        .main-donaciones-text{
+            padding: 3.5rem 10rem 3.5rem 10rem;
+        }
+
+        .recaudacion-container{
+            padding: 4rem 16rem 4rem 16rem;
+
+            
+            .donaciones-cifras {
+                padding: 2.25rem 1rem 0rem;
+                display: flex;
+
+                .single-cifra-pink, .single-cifra-blue, .single-cifra-red {
+                    min-width: 14rem;
+                    max-width: 33.33%;
+                    height: 75%;
+                }
+
+                .three {
+                    max-width: unset;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .apoya-wrapper{
+            .apoya-container{
+                padding: 3.39rem 10rem 3.39rem;
+                width:55%;
+                order: 1;
+
+                .apoya-title{
+                    width: 75%;
+
+                    h2{
+                        font-size: 2.9rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-donaciones {
+        background-position-y: 50%;
+    }
+
+    .main-donaciones {
+        .main-donaciones-text {
+            padding: 2rem 4rem;
+        }
+
+        .recaudacion-container {
+            padding: 4rem;
+
+            .recaudacion-responsive {
+                height: 278px;
+                display: grid;
+                grid-template-columns: 20% 30% 1fr;
+                grid-template-rows: 78px 1fr;
+                gap: 1rem 2rem;
+
+                .recaudacion-sub-title {
+                    padding: 0;
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+
+                .recaudacion-paragraph {
+                    padding: 0;
+                    grid-column: 1/3;
+                    grid-row: 2/3;
+                }
+
+                .donaciones-grafico {
+                    grid-column: 3/4;
+                    grid-row: 1/3;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .donaciones-cifras {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                div {
+                    justify-self: center;
+                }
+
+                .single-cifra-red {
+                    grid-column: 1/3;
+                    grid-row: 2/3;
+                }
+            }
+        }
+
+        .imagen-container {
+            width: 30%;
+            height: 60vh;
+            float: right;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        .apoya-container {
+            padding: 112px 20px 112px 60px;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-donaciones {
+        height: 360px;
+    }
+
+    .main-donaciones {
+        .main-donaciones-text {
+            width: 60%;
+            padding-left: 160px;
+        }
+
+        .recaudacion-container {
+            padding: 64px 260px;
+
+            .recaudacion-responsive {
+                height: 50vh;
+                row-gap: 2rem;
+
+                .donaciones-grafico img {
+                    height: 100%;
+                }
+            }
+
+            .donaciones-cifras {
+                margin-top: 4rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+
+                .single-cifra-red {
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                }
+            }
+        }
+
+        .apoya-container {
+            padding-left: 160px;
+
+            .apoya-dibujo img {
+                height: 80px;
+            }
+
+            .apoya-title h2 {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 75px;
+                letter-spacing: -0.25px;
+                text-align: left;
+            }
+
+            .apoya-paragraph p {
+                color: #212121;
+            }
+        }
+
+        .imagen-container {
+            height: 80vh;
+        }
+    }
+}

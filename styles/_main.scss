@@ -1,0 +1,337 @@
+.main {
+    padding-top: 1.5rem;
+
+    .main-about {
+        padding: 0 1rem;
+
+        h1 {
+            color: #000;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        p {
+            background: linear-gradient(var(--primaryColor600), var(--red));
+            background-clip: unset;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.5em;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+
+        button {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    .main-socialImpact {
+        background-color: var(--primaryColor50);
+        margin-top: 64px;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        .impact-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2rem;
+
+            .impact {
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                border: 1px solid #01010155;
+                border-radius: 10px;
+
+                img {
+                    width: 60px;
+                    height: 56px;
+                    margin-right: 5px;
+                }
+
+                div {
+                    h6 {
+                        font-family: var(--bodyFont);
+                        color: var(--primaryColor600);
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        color: var(--grey-55);
+                        font-size: 1em;
+
+                        span {
+                            color: var(--primaryColor600);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .main-testimonials {
+        padding: 4rem 1rem;
+        padding-bottom: 2.5rem;
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .main-involucrate {
+        div {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 5em;
+                width: 5em;
+            }
+
+            .title {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+                    color: #fff;
+                    margin: 0;
+                    font-size: 1.3em;
+                    width: 70%;
+                }
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+
+        .sumate {
+            background-image: url(../assets/involucrate.jpg);
+            background-position: 60%;
+            background-size: 170%;
+            height: 30vh;
+            padding: 0;
+            justify-content: end;
+
+            .mask {
+                background: linear-gradient(transparent 1%, #000);
+            }
+
+            h2 {
+                color: #fff;
+                font-size: 3em;
+                margin: 0;
+            }
+
+            p {
+                display: none;
+            }
+        }
+
+        .donacion {
+            background-color: #E5006D;
+        }
+
+        .empresaAliada {
+            background-color: #FF479F;
+        }
+
+        .voluntario {
+            background-color: #FEF0F7;
+
+            h2 {
+                color: var(--primaryColor600) !important;
+            }
+
+            i {
+                color: var(--primaryColor600) !important;
+            }
+        }
+    }
+}
+
+a.feed-powered-by-es.feed-powered-by-es-slider-new {
+    bottom: 0px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        .main-about {
+            text-align: center;
+            font-size: 20px;
+            padding: 32px 60px;
+
+            h1 {
+                margin: 0 !important;
+            }
+
+            button {
+                width: 50%;
+            }
+        }
+
+        .main-socialImpact {
+            padding: 32px 60px;
+
+            .impact-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .impact {
+                    justify-content: center;
+                }
+
+                .a,
+                .b {
+                    width: 50%;
+                    // flex-grow: 1;
+                }
+            }
+        }
+
+        .main-testimonials {
+            padding: 32px 90px;
+            margin-bottom: 2rem; //antes había 6 pero quedaba muy separado, ver si queda bien
+
+            h3 {
+                text-align: left;
+                margin-bottom: 40px;
+            }
+
+            .carousel {
+                height: 25vh;
+                display: flex;
+                justify-content: center;
+
+                .carousel-inner {
+
+                    .carousel-sub-item {
+                        display: flex;
+
+                        .testimonio-header {
+                            width: 30%;
+                            display: flex;
+                            flex-direction: column;
+
+                            img {
+                                height: 10rem;
+                                width: 10rem;
+                            }
+                        }
+
+                        .testimonio {
+                            width: 70%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-involucrate {
+            .sumate {
+                .mask {
+                    padding-left: 64px;
+                }
+
+                p {
+                    color: #fff;
+                    width: 50%;
+                    display: block;
+                }
+            }
+
+            .donacion,
+            .empresaAliada,
+            .voluntario {
+                padding: 16px 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 70vh;
+        background-size: 100%;
+
+        span {
+            width: 60%;
+            line-height: 1.2;
+            text-align: left;
+            padding: 2rem 4rem;
+        }
+    }
+
+    .main {
+        .main-about {
+            padding-left: 385px;
+            padding-right: 385px;
+        }
+
+        .main-socialImpact {
+
+            .a,
+            .b {
+                width: 30% !important;
+            }
+        }
+
+        .main-testimonials {
+            h3 {
+                font-size: 20px;
+            }
+
+            .carousel {
+                height: 40vh;
+
+                .carousel-inner {
+                    width: 70%;
+                    display: flex;
+
+                    .carousel-sub-item .testimonio-header {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+
+        .main-involucrate {
+            padding: 64px 160px;
+            display: grid;
+            grid-template-rows: 374px 184px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .sumate {
+                height: unset;
+                grid-row: 1/2;
+                grid-column: 1/4;
+            }
+
+            .donacion,
+            .empresaAliada,
+            .voluntario {
+                padding: 16px;
+            }
+        }
+    }
+}

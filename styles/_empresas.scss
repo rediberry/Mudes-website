@@ -1,0 +1,308 @@
+.hero-empresas {
+    background-image: url(../assets/empresas.jpg);
+    background-position: 40% 25%;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+
+.main-empresas {
+    padding: 0 0;
+
+    .main-empresas-text {
+        padding: 2rem 1rem 0rem 1rem;
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--grey-55);
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 15px 0;
+            color: #292929;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .main-aliado {
+        padding: 2rem 1rem;
+        background-color: var(--primaryColor50);
+
+        h4 {
+            color: var(--grey-55);
+            font-weight: 400;
+        }
+
+        h2 {
+            background: linear-gradient(var(--primaryColor600), var(--red));
+            background-clip: unset;
+            -webkit-background-clip: text;
+            color: transparent;
+            width: 80%;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 40px;
+        }
+
+        .single-valor {
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5%;
+            margin: 3rem 0rem;
+
+            .title {
+                padding-bottom: 0rem;
+
+                h4 {
+                    color: var(--red);
+                    font-weight: 400;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                color: #292929;
+                margin-bottom: 0rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .porque-container {
+        padding: 2rem 1rem;
+
+        .porque-header {
+            h2 {
+                font-weight: 500;
+            }
+        }
+
+        .porque-sub-header {
+            padding-top: 1rem;
+
+            h3 {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        .impacto-container {
+            padding-top: 1rem;
+
+            .single-impacto-container {
+                padding: 1rem 0;
+
+                h4 {
+                    color: var(--primaryColor600);
+                    font-weight: 400;
+                }
+
+                p {
+                    color: #292929;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .form-foto{
+        display: none;
+    }
+
+    .main-contacto {
+        .main-contacto-text-empresas {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            h2 {
+                font-weight: 500;
+            }
+
+            p {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 10rem;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+
+            /* Modal Content */
+            .modal-content {
+                background-color: var(--grey-2);
+                margin: auto;
+                padding: 1rem;
+                border: 1px solid var(--grey-55);
+                width: 80%;
+                text-align: center;
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-empresas {
+        height: 360px;
+    }
+
+    .main-empresas {
+        .main-empresas-text {
+            height: 348px;
+            padding: 2.5rem 3.75rem 2.5rem 3.75rem;
+        }
+
+        .main-aliado {
+            padding: 2rem 3.93rem;
+
+            .aliado-header {
+                padding-bottom: 2.5rem;
+            }
+
+            .single-valor {
+                margin: 0rem 4.82rem 1rem;
+            }
+        }
+
+        .porque-container {
+            padding: 2rem 3.75rem;
+
+            .impacto-container {
+                padding: 2.25rem 1rem 0rem;
+
+                .test-grid {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 1rem;
+                }
+
+                .single-impacto-container {
+                    min-width: 14rem;
+                }
+
+                .three {
+                    max-width: 50%;
+                    margin-left: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main-empresas {
+        .main-empresas-text {
+            height: unset;
+            padding: 3.68rem 10rem 3.68rem 10rem;
+        }
+
+        .main-aliado {
+            padding: 5.25rem 10rem;
+
+            .aliado-header {
+                padding-bottom: 2.5rem;
+
+                h2 {
+                    background: linear-gradient(var(--primaryColor600), var(--red));
+                    background-clip: unset;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    width: 80%;
+                    font-weight: 700;
+                    font-size: 45px;
+                    line-height: 52px;
+                }
+            }
+
+            .single-valor-wrapper {
+                display: grid;
+                grid-template-columns: 33.33% 33.33% 33.33%;
+
+                .single-valor {
+                    margin: 0rem 1.25rem 1rem;
+                }
+            }
+        }
+
+        .porque-container {
+            padding: 5rem 10rem;
+
+            .impacto-container {
+                padding: 2.25rem 1rem 0rem;
+                display: flex;
+
+                .single-impacto-container {
+                    min-width: 14rem;
+                    max-width: 33.33%;
+                }
+
+                .three {
+                    max-width: unset;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        #form {
+            display:flex;
+
+            .form-foto{
+                display: flex;
+                order: 2;
+                width: 50%;
+                background-image: url(../assets/pacifico-shoot.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .main-contacto{
+                padding: 2rem 7.18rem 2rem 8.75rem;
+                order:1;
+                width: 50%;
+
+                .modal {
+                    .modal-content {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}

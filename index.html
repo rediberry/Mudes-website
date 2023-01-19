@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MUDES</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="./assets/MUDES_color.png"/>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <!-- Custom css -->
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="navbar-header-desktop">
+            <div class="social">
+                <a href="mailto:info@mudes.pe" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> info@mudes.pe</a>
+                <a href="https://www.linkedin.com/company/mudesperu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/MUDESPERU/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mudesperu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav class="navbar page">
+            <div class="navbar-center">
+                <!-- logo -->
+                <a href="#"><img src="./assets/MUDES_color.png" class="nav-logo" alt="store logo" /></a>
+                <div class="navbar-buttons">
+                    <a href="./pages/donaciones.html"><button type="button" class="donar-btn">Dona</button></a>
+                    <button class="toggle-nav">
+                        <i class="fas fa-bars" style="color: #e5006d"></i>
+                    </button>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#" class="nav-link" style="color: #e5006d">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nosotras.html" class="nav-link">Nosotras</a>
+                    </li>
+                    <li>
+                        <a href="pages/queHacemos.html" class="nav-link">¿Qué hacemos?</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropbtn">Súmate</a>
+                            <div class="dropdown-content">
+                                <a href="./pages/donaciones.html" class="nav-link">Donaciones</a>
+                                <a href="./pages/voluntariado.html" class="nav-link">Voluntariado</a>
+                                <a href="./pages/empresas.html" class="nav-link">Empresa aliada</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./pages/novedades.html" class="nav-link">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <!-- hero -->
+        <div class="hero">
+            <div>
+                <span>Rompiendo desigualdades y creando más conocimiento</span>
+            </div>
+        </div>
+        <!-- end of hero -->
+        <div class="main">
+            <div class="main-about">
+                <h1>Mujeres Unidas para el Desarrollo Social</h1>
+                <p>Somos una iniciativa independiente que busca impulsar la autonomía integral de las mujeres en contextos vulnerables.</p>
+                <a href="./pages/queHacemos.html"><button type="button" class="donar-btn">Más información</button></a>
+            </div>
+            <div class="main-socialImpact">
+                <h3>¿A quiénes buscamos impactar?</h3>
+                <div class="impact-container">
+                    <div class="impact a">
+                        <img src="./assets/icono-impacto-1.svg" alt="" />
+                        <div>
+                            <h6>+40 años</h6>
+                            <p>tienen las <span>mujeres</span> que buscamos ayudar.</p>
+                        </div>
+                    </div>
+                    <div class="impact b">
+                        <img src="./assets/icono-impacto-2.svg" alt="" />
+                        <div>
+                            <h6>65%</h6>
+                            <p>de estas mujeres <span>trabajan de manera informal.</span></p>
+                        </div>
+                    </div>
+                    <div class="impact c">
+                        <img src="./assets/icono-impacto-3.svg" alt="" />
+                        <div>
+                            <h6>34%</h6>
+                            <p>no tienen <span>ingresos propios.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Ver nuestro trabajo</a>
+            </div>
+            <div class="main-testimonials">
+                <h3>Testimonios</h3>
+                <div id="carousel-testimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <div class="carousel-sub-item">
+                                <div class="testimonio-header">
+                                    <img src="assets/testimonios/Nancy Gregoria Chavez Paulino.jpeg" class="d-block nancy_p" alt="..." />
+                                    <div class="testimonio-header__text">
+                                        <span>Nancy Gregoria Chavez Paulino</span>
+                                        <p class="info">48 años, Madre de hogar</p>
+                                    </div>
+                                </div>
+                                <p class="testimonio">
+                                    “Las chicas de MUDES son buenas personas que nos están enseñando a desenvolvernos para tener mayores oportunidades en nuestras vidas. Nos tienen mucha paciencia y son buenas compañeras en cada clase que nos dan, realmente agradecemos que nos hayamos conocido en la
+                                    comunidad Juan Pablo II .”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="carousel-sub-item">
+                                <div class="testimonio-header">
+                                    <img src="assets/testimonios/Sabina Gladis Tadeo Aguero.png" class="d-block" alt="..." />
+                                    <div class="testimonio-header__text">
+                                        <span>Sabina Gladis Tadeo Aguero</span>
+                                        <p class="info">42 años, Lider de vaso de leche</p>
+                                    </div>
+                                </div>
+                                <p class="testimonio">
+                                    “Agradecemos a la ONG por traer a nuestra comunidad profesionales que nos capacitan en temas de emprendimiento y de salud integral. Es bonito estar reunidas entre todas nosotras y esperamos seguir avanzando para lograr el objetivo de nuestro proyecto de
+                                    emprendimiento.”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="carousel-sub-item">
+                                <div class="testimonio-header">
+                                    <img src="assets/testimonios/Sonia Galarza.png" class="d-block" alt="..." />
+                                    <div class="testimonio-header__text">
+                                        <span>Sonia Galarza</span>
+                                        <p class="info">39 años, Madre de hogar</p>
+                                    </div>
+                                </div>
+                                <p class="testimonio">
+                                    “En Mudes nos apoyan mucho, gracias a ellas y a los profesionales que nos acompañan en la comunidad hemos aprendido muchas cosas como ahorrar, nutrición, baile y ejercicio para nuestra salud. Participó en las actividades de la ONG porque realmente quiero un cambio
+                                    en mi vida para mi y mi familia.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram-feed">
+                <div class="embedsocial-hashtag" data-ref="9a9e9a8c281151f419e325eeae9022578d39d70e">
+                    <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial<span>→</span> 
+                    </a> 
+                </div> 
+            </div>
+            <div class="main-involucrate">
+                <div class="sumate">
+                    <div class="mask">
+                        <h2>Súmate</h2>
+                        <p>Unidas y unidos somos más fuertes. Tú puedes contribuir a romper las brechas de desigualdad de mujeres del Perú que necesitan de nuestra ayuda.</p>
+                    </div>
+                </div>
+                <a class="donacion-container" href="./pages/donaciones.html">
+                    <div class="donacion">
+                        <img src="assets/manos-corazon.png" alt="" />
+                        <div class="title">
+                            <h2>
+                                Participando <br />
+                                con tu donación
+                            </h2>
+                            <i class="fa-sharp fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="empresaAliada-container" href="./pages/empresas.html">
+                    <div class="empresaAliada">
+                        <img src="assets/manos-estrechadas.png" alt="" />
+                        <div class="title">
+                            <h2>
+                                Participando como <br />
+                                empresa aliada
+                            </h2>
+                            <i class="fa-sharp fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="voluntario-container" href="pages/voluntariado.html">
+                    <div class="voluntario">
+                        <img src="assets/dando-corazon.png" alt="" />
+                        <div class="title">
+                            <h2>
+                                Participando <br />
+                                como voluntari@
+                            </h2>
+                            <i class="fa-sharp fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- News -->
+        <div class="news">
+            <div class="news-header">
+                <h2>Novedades</h2>
+                <a href="./pages/novedades.html">Ver más ></a>
+            </div>
+            <div class="news-container">
+                <div id="carousel-news" class="carousel carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div id="posts" class="carousel-inner"></div>
+                </div>
+                <section id="posts-desktop" class="posts grid-container"></section>
+                <img class="loader" src="./assets/loader.svg" alt="Cargando..." />
+                <template id="post-template">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="portada">
+                            <img class="post-image d-block w-100" />
+                            <span class="post-title"></span>
+                        </div>
+                        <span class="fecha-news"></span>
+                        <span class="post-content"></span>
+                    </div>
+                </template>
+                <template id="post-template-desktop">
+                    <article class="post">
+                        <div class="portada">
+                            <img class="post-image d-block w-100" />
+                            <span class="post-title"></span>
+                        </div>
+                        <span class="fecha-news"></span>
+                        <span class="post-content"></span>
+                    </article>
+                </template>
+            </div>
+        </div>
+        <!-- end of News -->
+        <!-- Sponsors -->
+        <div class="main-sponsors">
+            <h2>Colaboraciones</h2>
+            <div id="carousel-colaboraciones" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/colaboradores/urma.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/Logo_Pacífico.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/coderhouse.jpg" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/Selfsteem.jpg" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/saga falabella.jpg" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/tottus.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/butrich.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/colaboradores/centria.jpg" class="d-block" alt="..." />
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-colaboraciones-desktop">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_pacifico_carrusel_desktop.png" height="100" width="250" alt="Pacifico" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_urma_carrusel_desktop.webp" height="100" width="250" alt="Urma" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_centria_carrusel_desktop.webp" height="100" width="250" alt="Centria" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_butrich_carrusel_desktop.webp" height="100" width="250" alt="Butrich" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_tottus_carrusel_desktop.webp" height="100" width="250" alt="Tottus" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_selfsteem_carrusel_desktop.webp" height="100" width="250" alt="Self Steem Fitness" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_falabella_f_carrusel_desktop.webp" height="100" width="250" alt="Falabella" />
+                            </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_coderhouse_carrusel_desktop.webp" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_pacifico_carrusel_desktop.png" height="100" width="250" alt="Pacifico" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_urma_carrusel_desktop.webp" height="100" width="250" alt="Urma" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_centria_carrusel_desktop.webp" height="100" width="250" alt="Centria" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_butrich_carrusel_desktop.webp" height="100" width="250" alt="Butrich" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_tottus_carrusel_desktop.webp" height="100" width="250" alt="Tottus" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_selfsteem_carrusel_desktop.webp" height="100" width="250" alt="Self Steem Fitness" />
+                        </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_falabella_f_carrusel_desktop.webp" height="100" width="250" alt="Falabella" />
+                            </div>
+                        <div class="slide">
+                            <img src="assets/colaboradores/carrusel_desktop/logo_coderhouse_carrusel_desktop.webp" height="100" width="250" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of Sponsors -->
+        <!-- sidebar -->
+        <div class="sidebar-overlay">
+            <aside class="sidebar">
+                <!-- close -->
+                <a href="./index.html"><img src="./assets/MUDES_color.png" class="sidebar-logo" alt="store logo" /></a>
+                <button class="sidebar-close"><i class="fas fa-times"></i></button>
+                <!-- links -->
+                <ul class="sidebar-links">
+                    <li>
+                        <a href="index.html" class="sidebar-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nosotras.html" class="sidebar-link">Nosotras</a>
+                    </li>
+                    <li>
+                        <a href="pages/queHacemos.html" class="sidebar-link">¿Qué hacemos?</a>
+                    </li>
+                    <li class="sidebar-sublinks">
+                        <h4>Sumate</h4>
+                        <ul>
+                            <li><a href="pages/donaciones.html" class="sidebar-sublink">Donaciones</a></li>
+                            <li><a href="pages/voluntariado.html" class="sidebar-sublink">Voluntariado</a></li>
+                            <li><a href="pages/empresas.html" class="sidebar-sublink">Empresa aliada</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pages/novedades.html" class="sidebar-link">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html" class="sidebar-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.linkedin.com/company/mudesperu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mudesperu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/MUDESPERU/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="#" class="mail">info@mudes.pe</a>
+            </aside>
+        </div>
+        <!-- end of sidebar -->
+        <!-- floating button -->
+        <div class="float-button">
+            <a href="./pages/donaciones.html"><img src="./assets/volunteer_activism_FILL0_wght400_GRAD0_opsz48.png" alt="boton dona">Quiero donar</a>
+        </div>
+        <!-- end of floating button -->
+        <!-- footer -->
+        <footer>
+            <div class="row primary">
+                <div class="column about">
+                    <div class="logo-mail-footer">
+                        <a href="./index.html"><img src="./assets/MUDES_color.png" alt="store logo" /></a>
+                    </div>
+                    <h3>Síguenos en nuestras redes</h3>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/company/mudesperu/" target="_blank" rel="noopener noreferrer"><img src="./assets/icono-linkedin.svg" alt="" /></a>
+                        <a href="https://www.instagram.com/mudesperu/" target="_blank" rel="noopener noreferrer"><img src="./assets/icono-instagram.svg" alt="" /></a>
+                        <a href="https://www.facebook.com/MUDESPERU/" target="_blank" rel="noopener noreferrer"><img src="./assets/icono-facebook.svg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="column links">
+                    <h3>Sobre MUDES</h3>
+                    <ul>
+                        <li><a href="./pages/nosotras.html">Nosotras</a></li>
+                        <li><a href="./pages/queHacemos.html">¿Qué hacemos?</a></li>
+                        <li><a href="./pages/novedades.html">Novedades</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="column links">
+                    <h3>Súmate</h3>
+                    <ul>
+                        <li><a href="pages/voluntariado.html">Voluntariado</a></li>
+                        <li><a href="pages/donaciones.html">Donaciones</a></li>
+                        <li><a href="pages/empresas.html">Empresa aliada</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <p>Copyright &copy; 2022 MUJERES UNIDAS PARA EL DESARROLLO SOCIAL MUDES</p>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        <!-- contentful -->
+        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+        <!-- index js -->
+        <script src="./js/index.js"></script>
+        <!-- novedades index js -->
+        <script src="./js/novedadesIndex.js"></script>
+        <!-- IG Feed js -->
+        <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+    </body>
+</html>

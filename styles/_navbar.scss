@@ -1,0 +1,215 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    opacity: .87;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    background: var(--backgroundColor);
+    z-index: 1;
+    justify-content: center;
+}
+
+.navbar-center {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.navbar-buttons {
+    display: flex;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+.toggle-nav {
+    background: var(--primaryColor);
+    border-color: transparent;
+    color: var(--clr-white);
+    width: 3.75rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-logo {
+    max-width: 2.5rem;
+}
+
+.toggle-nav:hover {
+    background: var(--clr-primary-3);
+}
+
+/* page navbar */
+.page .nav-link {
+    color: var(--grey-600);
+}
+
+.page .nav-link:hover {
+    color: var(--primaryColor);
+    transition: var(--transition);
+}
+
+.navbar-header-desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar {
+        padding: 0rem 0rem;
+
+        .navbar-center {
+            .navbar-buttons {
+                order: 2;
+            }
+
+            .nav-links {
+                order: 1;
+                align-items: center;
+                margin-bottom: 0rem;
+                padding: 0rem 2rem;
+                width: 100%;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        margin: 0rem 0rem;
+                        padding: 0rem 1rem;
+                    }
+
+                    /* The dropdown container */
+                    .dropdown {
+                        float: left;
+                        overflow: hidden;
+
+                        .dropbtn {
+                            border: none;
+                            outline: none;
+                        }
+
+                        .dropdown-content {
+                            display: block;
+                            position: absolute;
+                            min-width: 18rem;
+                            z-index: 1;
+                            background-color: #f9f9f9;
+                            padding: 1rem 0rem;
+
+                            a {
+                                float: none;
+                                text-decoration: none;
+                                display: block;
+                                text-align: left;
+                                padding-top: 1rem;
+                            }
+                        }
+                    }
+
+                    /* Show the dropdown menu on hover */
+                    .dropdown:hover {
+                        overflow: visible;
+
+                        .dropdown-content {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-header-desktop {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        background-color: var(--primaryColor600);
+
+        .social {
+            width: 100%;
+            text-align: right;
+
+            a {
+                color: #fff;
+                font-weight: 400;
+                font-size: 1rem;
+
+                i {
+                    height: 1rem;
+                    padding: 0rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .navbar-center {
+        position: relative;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        // margin: 0;
+
+        .navbar-buttons {
+            order: 3;
+        }
+
+        ul {
+            height: 100%;
+            flex-grow: .7;
+            justify-content: space-around;
+            margin: 0;
+            list-style: none;
+        }
+
+        a {
+            color: #292929;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+
+
+    .toggle-nav {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        margin-right: 1rem;
+        letter-spacing: var(--spacing);
+        transition: var(--transition);
+        font-size: 1.25rem;
+    }
+
+    .nav-link:hover {
+        color: var(--primaryColorHover);
+    }
+
+    .sidebar-overlay {
+        display: none;
+    }
+}

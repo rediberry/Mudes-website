@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+    .hero div span {
+        opacity: 1;
+    }
+
+    // .grid-container {
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr);
+    //     gap: 1rem;
+    // }
+}
+
+@media screen and (min-width: 1170px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    footer .row.primary {
+        // grid-template-columns: 1fr;
+        // grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        max-width: 100%;
+    }
+
+    footer .column {
+        padding: 0 1em;
+    }
+}
