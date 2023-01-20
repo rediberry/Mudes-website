@@ -811,7 +811,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 }
 .main-queHacemos .frontpage {
   background-image: url(../assets/que-hacemos-frontpage.jpg);
-  background-position: center;
+  background-position: 0% 0%;
   background-size: cover;
   height: 40vh;
   width: 100%;
@@ -1050,7 +1050,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 }
 .main-voluntariado .frontpage {
   background-image: url(../assets/voluntariado-frontpage.jpg);
-  background-position: 100% 85%;
+  background-position: 50% 40%;
   background-size: cover;
   height: 40vh;
   width: 100%;
@@ -1233,7 +1233,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     height: 444px;
     display: block;
     background-size: cover;
-    background-position-y: 50%;
+    background-position-y: 30%;
   }
   .main-voluntariado .modal .modal-content {
     width: 40%;
@@ -1661,6 +1661,9 @@ footer .copyright p {
 }
 .main-nosotras .main-valores .single-valor .title {
   padding-bottom: 1rem;
+}
+.main-nosotras .main-valores .single-valor .title .title-img {
+  width: 4rem;
 }
 .main-nosotras .main-valores .single-valor .title h4 {
   color: var(--red);
