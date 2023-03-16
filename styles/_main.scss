@@ -77,13 +77,14 @@
 
 
         a {
+            margin-top: 2rem;
             text-decoration: none;
             font-weight: bold;
         }
     }
 
     .main-testimonials {
-        padding: 4rem 1rem;
+        padding: 0 1rem;
         padding-bottom: 2.5rem;
 
         h3 {
@@ -196,14 +197,14 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
                 flex-wrap: wrap;
                 justify-content: center;
 
+
                 .impact {
                     justify-content: center;
                 }
 
                 .a,
                 .b {
-                    width: 50%;
-                    // flex-grow: 1;
+                    width: 45%;
                 }
             }
         }

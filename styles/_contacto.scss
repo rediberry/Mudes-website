@@ -145,6 +145,10 @@
             padding: 2rem 7.43rem 2rem 8.75rem;
             order: 1;
 
+            textarea {
+                resize: none;
+            }
+
             .modal {
                 .modal-content {
                     width: 30%;

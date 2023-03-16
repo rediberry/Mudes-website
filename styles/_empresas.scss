@@ -116,7 +116,7 @@
         }
     }
 
-    .form-foto{
+    .form-foto {
         display: none;
     }
 
@@ -264,13 +264,18 @@
         .porque-container {
             padding: 5rem 10rem;
 
+            h2,
+            .porque-sub-header {
+                text-align: center;
+            }
+
             .impacto-container {
+
                 padding: 2.25rem 1rem 0rem;
                 display: flex;
 
                 .single-impacto-container {
-                    min-width: 14rem;
-                    max-width: 33.33%;
+                    min-width: 15rem;
                 }
 
                 .three {
@@ -281,9 +286,9 @@
         }
 
         #form {
-            display:flex;
+            display: flex;
 
-            .form-foto{
+            .form-foto {
                 display: flex;
                 order: 2;
                 width: 50%;
@@ -292,10 +297,14 @@
                 background-position: center;
             }
 
-            .main-contacto{
+            .main-contacto {
                 padding: 2rem 7.18rem 2rem 8.75rem;
-                order:1;
+                order: 1;
                 width: 50%;
+
+                textarea {
+                    resize: none;
+                }
 
                 .modal {
                     .modal-content {

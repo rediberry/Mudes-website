@@ -1,7 +1,7 @@
 .main-queHacemos {
     .frontpage {
         background-image: url(../assets/que-hacemos-frontpage.jpg);
-        background-position: 0% 0%;
+        background-position: 40% 0%;
         background-size: cover;
         height: 40vh;
         width: 100%;
@@ -25,7 +25,7 @@
     padding: 1em .8em;
 
     h3 {
-        color: var(--black);
+        color: var(--grey-55);
     }
 
     .pilar {
@@ -114,9 +114,9 @@
         }
     }
 
-    .text{
+    .text {
         padding: 1rem;
-        
+
         p {
             color: var(--grey-55);
         }
@@ -142,7 +142,7 @@
         flex-direction: column;
         justify-content: end;
 
-        p{
+        p {
             color: #fff;
             background-color: rgba(0, 0, 0, 0.096);
         }
@@ -263,7 +263,7 @@
         .main-proyectoJuanPablo {
             padding: 100px 160px;
 
-            .img{
+            .img {
                 background-position-y: 45%;
             }
 

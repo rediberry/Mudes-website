@@ -151,8 +151,7 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -206,7 +205,6 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -226,7 +224,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 16px;
 }
 
 .navbar-buttons {
@@ -457,11 +455,12 @@ p {
   color: var(--primaryColor600);
 }
 .main .main-socialImpact a {
+  margin-top: 2rem;
   text-decoration: none;
   font-weight: bold;
 }
 .main .main-testimonials {
-  padding: 4rem 1rem;
+  padding: 0 1rem;
   padding-bottom: 2.5rem;
 }
 .main .main-testimonials h3 {
@@ -556,8 +555,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     justify-content: center;
   }
   .main .main-socialImpact .impact-container .a,
-.main .main-socialImpact .impact-container .b {
-    width: 50%;
+  .main .main-socialImpact .impact-container .b {
+    width: 45%;
   }
   .main .main-testimonials {
     padding: 32px 90px;
@@ -597,8 +596,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     display: block;
   }
   .main .main-involucrate .donacion,
-.main .main-involucrate .empresaAliada,
-.main .main-involucrate .voluntario {
+  .main .main-involucrate .empresaAliada,
+  .main .main-involucrate .voluntario {
     padding: 16px 60px;
   }
 }
@@ -618,7 +617,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     padding-right: 385px;
   }
   .main .main-socialImpact .a,
-.main .main-socialImpact .b {
+  .main .main-socialImpact .b {
     width: 30% !important;
   }
   .main .main-testimonials h3 {
@@ -646,8 +645,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     grid-column: 1/4;
   }
   .main .main-involucrate .donacion,
-.main .main-involucrate .empresaAliada,
-.main .main-involucrate .voluntario {
+  .main .main-involucrate .empresaAliada,
+  .main .main-involucrate .voluntario {
     padding: 16px;
   }
 }
@@ -733,8 +732,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 .main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -743,14 +741,6 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   }
   .main-sponsors #carousel-colaboraciones-desktop {
     display: flex;
-  }
-  @-webkit-keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-2000px);
-    }
   }
   @keyframes scroll {
     0% {
@@ -787,8 +777,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     top: 0;
   }
   .main-sponsors #carousel-colaboraciones-desktop .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
     display: flex;
     width: 3000px;
   }
@@ -811,7 +800,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 }
 .main-queHacemos .frontpage {
   background-image: url(../assets/que-hacemos-frontpage.jpg);
-  background-position: 0% 0%;
+  background-position: 40% 0%;
   background-size: cover;
   height: 40vh;
   width: 100%;
@@ -832,7 +821,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   padding: 1em 0.8em;
 }
 .main-pilares h3 {
-  color: var(--black);
+  color: var(--grey-55);
 }
 .main-pilares .pilar {
   background-color: #fff;
@@ -1232,7 +1221,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     width: 100%;
     height: 444px;
     display: block;
-    background-size: cover;
+    background-size: 100%;
     background-position-y: 30%;
   }
   .main-voluntariado .modal .modal-content {
@@ -1284,17 +1273,18 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     line-height: 32px;
   }
   .main-voluntariado .end-container .main-form form textarea {
+    resize: none;
     font-size: 1rem;
     height: 20vh;
   }
   .main-voluntariado .end-container .main-form form button {
-    width: 50%;
-    margin-left: 50%;
+    width: 100%;
   }
   .main-voluntariado .end-container .voluntariado-banner {
     height: unset;
     background-repeat: no-repeat;
-    background-position-x: 30%;
+    background-position-x: 40%;
+    background-size: cover;
   }
   .main-voluntariado .modal .modal-content {
     width: 40%;
@@ -1345,11 +1335,8 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
-  display: grid;
   place-items: center;
   z-index: -1;
   transition: var(--transition);
@@ -1578,14 +1565,6 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-900px);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1595,8 +1574,7 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -1687,9 +1665,15 @@ footer .copyright p {
     text-align: center;
     padding: 2.5rem 7.9rem 2.5rem 7.9rem;
   }
+  .main-nosotras .main-about-nosotras h1 {
+    margin: 0 auto;
+  }
   .main-nosotras .main-nosotras-carousel .mision-nosotras-container {
     padding-left: 6.75rem;
     padding-right: 6.75rem;
+  }
+  .main-nosotras .main-nosotras-carousel .mision-nosotras-container h3 {
+    text-align: center;
   }
   .main-nosotras .main-valores {
     padding: 3.25rem 3.75rem;
@@ -1880,15 +1864,18 @@ footer .copyright p {
     padding: 2rem 7.43rem 2rem 8.75rem;
     order: 1;
   }
+  .contacto-block .main-contacto textarea {
+    resize: none;
+  }
   .contacto-block .main-contacto .modal .modal-content {
     width: 30%;
   }
 }
 .hero-donaciones {
-  background-image: url(../assets/Donaciones.jpg);
+  background-image: url(../assets/foto-hero-dona.jpg);
   background-position: 50% 50%;
-  background-size: cover;
-  height: 40vh;
+  background-size: 110%;
+  height: 30vh;
   padding: 0 0;
 }
 
@@ -1897,6 +1884,10 @@ footer .copyright p {
 }
 .main-donaciones .main-donaciones-text {
   padding: 2rem 1rem;
+}
+.main-donaciones .main-donaciones-text img {
+  width: 80px;
+  height: 80px;
 }
 .main-donaciones .main-donaciones-text h1 {
   font-size: 2.8rem;
@@ -1907,6 +1898,24 @@ footer .copyright p {
   font-weight: 400;
   margin: 15px 0;
   color: var(--grey-55);
+}
+.main-donaciones .main-donaciones-text span {
+  opacity: 0;
+}
+.main-donaciones .main-donaciones-text .buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+.main-donaciones .main-donaciones-text .buttons-container button {
+  background-color: var(--primaryColor600);
+  height: 156px;
+  border: none;
+  border-radius: 10px;
+}
+.main-donaciones .main-donaciones-text .buttons-container button img {
+  width: 80%;
 }
 .main-donaciones .recaudacion-container {
   background-color: var(--grey-2);
@@ -1939,17 +1948,20 @@ footer .copyright p {
 .main-donaciones .recaudacion-container .donaciones-grafico img {
   width: 65%;
 }
+.main-donaciones .recaudacion-container .donaciones-cifras span {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-pink {
   border-left: var(--primaryColor600) 4px solid;
   padding: 0 0.5rem;
   margin: 1rem 0;
 }
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-pink span {
-  font-weight: 900;
-  font-size: 2.2rem;
   color: var(--primaryColor600);
 }
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-pink p {
+  margin: 0;
   font-size: small;
   color: var(--grey-55);
 }
@@ -1959,11 +1971,10 @@ footer .copyright p {
   margin: 1rem 0;
 }
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-blue span {
-  font-weight: 900;
-  font-size: 2.2rem;
   color: var(--blue);
 }
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-blue p {
+  margin: 0;
   font-size: small;
   color: var(--grey-55);
 }
@@ -1973,84 +1984,66 @@ footer .copyright p {
   margin: 1rem 0;
 }
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-red span {
-  font-weight: 900;
-  font-size: 2.2rem;
   color: var(--red);
 }
 .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-red p {
   font-size: small;
   color: var(--grey-55);
 }
-.main-donaciones .imagen-container img {
-  width: 100%;
-}
-.main-donaciones .apoya-container {
-  padding: 2rem 1rem;
-}
-.main-donaciones .apoya-container .apoya-title h2 {
-  background: linear-gradient(var(--primaryColor600), var(--red));
-  background-clip: unset;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.main-donaciones .apoya-container .apoya-paragraph {
-  padding: 1rem 0;
-}
-.main-donaciones .apoya-container .apoya-paragraph p {
-  color: var(--grey-55);
-  font-weight: 400;
-}
-.main-donaciones .apoya-container .ver-datos-button .ver-datos-btn {
-  cursor: pointer;
-  color: var(--primaryColor50);
-  background: var(--primaryColor600);
-  border: transparent;
-  border-radius: var(--borderRadius);
-  letter-spacing: var(--letterSpacing);
-  width: 100%;
-  padding: 0.5rem 0;
-  box-shadow: var(--shadow-1);
-  transition: var(--transition);
-  display: inline-block;
-}
-.main-donaciones .apoya-container .ver-datos-button .ver-datos-btn:hover {
-  background: var(--primaryColorHover);
-  box-shadow: var(--shadow-3);
-}
-.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block {
-  padding-bottom: 1rem;
-}
-.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block h5 {
-  font-size: 1rem;
-  color: var(--grey-55);
-}
-.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block p {
-  font-size: 1.125rem;
-  color: #010101;
-  margin-bottom: 0.5rem;
-}
-.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block input {
-  font-size: 1.125rem;
-  color: #010101;
-  margin-bottom: 0.5rem;
-  font-weight: 400;
-  border-style: hidden;
-}
-.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block i {
-  margin-left: 1rem;
-}
 
 @media screen and (min-width: 768px) {
   .hero-donaciones {
-    background-position: 80% 40%;
-    height: 360px;
+    background-position: 50%;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    position: absolute;
+  }
+  .main-donaciones {
+    background: transparent;
+    position: relative;
   }
   .main-donaciones .main-donaciones-text {
+    height: 80vh;
     text-align: start;
-    padding: 2rem 3.75rem 2rem 3.75rem;
+    padding: 2rem 3.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-donaciones .main-donaciones-text h1 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 75px;
+    letter-spacing: -0.25px;
+    color: #292929;
+  }
+  .main-donaciones .main-donaciones-text p {
+    color: #292929;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    flex-grow: 1;
+  }
+  .main-donaciones .main-donaciones-text span {
+    color: #292929;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+  .main-donaciones .main-donaciones-text .buttons-container {
+    align-items: end;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
   .main-donaciones .recaudacion-container {
-    padding: 4rem 3.75rem 4rem 3.75rem;
+    padding: 4rem 3.75rem;
+    position: relative;
   }
   .main-donaciones .recaudacion-container .recaudacion-title {
     text-align: initial;
@@ -2058,35 +2051,42 @@ footer .copyright p {
   }
   .main-donaciones .recaudacion-container .container-father {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   .main-donaciones .recaudacion-container .container-father .container-one {
     flex-direction: column;
-    max-width: 50%;
-  }
-  .main-donaciones .recaudacion-container .container-father .container-two {
-    width: 50%;
-  }
-  .main-donaciones .recaudacion-container .container-father .container-two .donaciones-grafico {
-    height: 100%;
   }
   .main-donaciones .recaudacion-container .container-father .container-two .donaciones-grafico img {
-    max-width: 70%;
+    max-width: 50%;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras {
-    padding: 2.25rem 1rem 0rem;
+    width: 80%;
+    padding-bottom: 4rem;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .test-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
+    grid-column: 3/4;
+    justify-items: end;
   }
-  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink, .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink,
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
     max-width: 60%;
   }
+  .main-donaciones .recaudacion-container .donaciones-cifras .single-grid {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+  }
   .main-donaciones .recaudacion-container .donaciones-cifras .three {
-    max-width: 20%;
-    margin-left: 35%;
+    max-width: 50%;
+    margin-left: 25%;
     margin-top: 1rem;
   }
   .main-donaciones .apoya-wrapper {
@@ -2099,13 +2099,11 @@ footer .copyright p {
   .main-donaciones .apoya-wrapper .imagen-container img {
     height: auto;
   }
-  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  @supports (object-fit: cover) {
     .main-donaciones .apoya-wrapper .imagen-container img {
       height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: center center;
-         object-position: center center;
+      object-fit: cover;
+      object-position: center center;
     }
   }
   .main-donaciones .apoya-wrapper .apoya-container {
@@ -2118,27 +2116,64 @@ footer .copyright p {
   }
 }
 @media screen and (min-width: 1024px) {
+  .hero-donaciones {
+    height: 140vh;
+  }
   .main-donaciones .main-donaciones-text {
-    padding: 3.5rem 10rem 3.5rem 10rem;
+    padding: 1rem 5rem;
+    height: 140vh;
+  }
+  .main-donaciones .main-donaciones-text img {
+    align-self: flex-start;
+  }
+  .main-donaciones .main-donaciones-text h1 {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 75px;
+  }
+  .main-donaciones .main-donaciones-text p {
+    width: 50%;
+  }
+  .main-donaciones .main-donaciones-text .donar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-donaciones .main-donaciones-text .donar-container span {
+    width: 25%;
+    text-align: left;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #292929;
+  }
+  .main-donaciones .main-donaciones-text .donar-container button {
+    max-width: 156px;
   }
   .main-donaciones .recaudacion-container {
-    padding: 4rem 16rem 4rem 16rem;
+    padding: 4rem 16rem;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras {
-    padding: 2.25rem 1rem 0rem;
+    width: 60%;
+    height: 55%;
     display: flex;
+    justify-content: space-between;
   }
-  .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-pink, .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-blue, .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-red {
-    min-width: 14rem;
-    max-width: 33.33%;
-    height: 75%;
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid {
+    width: 33.33%;
+    justify-items: left;
   }
-  .main-donaciones .recaudacion-container .donaciones-cifras .three {
-    max-width: unset;
-    margin-left: 1rem;
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink,
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
+    max-width: 70%;
+    max-height: 50%;
+  }
+  .main-donaciones .recaudacion-container .donaciones-cifras .single-grid .single-cifra-red {
+    max-width: none;
   }
   .main-donaciones .apoya-wrapper .apoya-container {
-    padding: 3.39rem 10rem 3.39rem;
+    padding: 3.39rem 10rem;
     width: 55%;
     order: 1;
   }
@@ -2148,118 +2183,6 @@ footer .copyright p {
   .main-donaciones .apoya-wrapper .apoya-container .apoya-title h2 {
     font-size: 2.9rem;
     font-weight: 700;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-donaciones {
-    background-position-y: 50%;
-  }
-  .main-donaciones .main-donaciones-text {
-    padding: 2rem 4rem;
-  }
-  .main-donaciones .recaudacion-container {
-    padding: 4rem;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive {
-    height: 278px;
-    display: grid;
-    grid-template-columns: 20% 30% 1fr;
-    grid-template-rows: 78px 1fr;
-    gap: 1rem 2rem;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive .recaudacion-sub-title {
-    padding: 0;
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive .recaudacion-paragraph {
-    padding: 0;
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive .donaciones-grafico {
-    grid-column: 3/4;
-    grid-row: 1/3;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive .donaciones-grafico img {
-    width: 100%;
-  }
-  .main-donaciones .recaudacion-container .donaciones-cifras {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .main-donaciones .recaudacion-container .donaciones-cifras div {
-    justify-self: center;
-  }
-  .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-red {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-  .main-donaciones .imagen-container {
-    width: 30%;
-    height: 60vh;
-    float: right;
-  }
-  .main-donaciones .imagen-container img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .main-donaciones .apoya-container {
-    padding: 112px 20px 112px 60px;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .hero-donaciones {
-    height: 360px;
-  }
-  .main-donaciones .main-donaciones-text {
-    width: 60%;
-    padding-left: 160px;
-  }
-  .main-donaciones .recaudacion-container {
-    padding: 64px 260px;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive {
-    height: 50vh;
-    row-gap: 2rem;
-  }
-  .main-donaciones .recaudacion-container .recaudacion-responsive .donaciones-grafico img {
-    height: 100%;
-  }
-  .main-donaciones .recaudacion-container .donaciones-cifras {
-    margin-top: 4rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .main-donaciones .recaudacion-container .donaciones-cifras .single-cifra-red {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .main-donaciones .apoya-container {
-    padding-left: 160px;
-  }
-  .main-donaciones .apoya-container .apoya-dibujo img {
-    height: 80px;
-  }
-  .main-donaciones .apoya-container .apoya-title h2 {
-    background: linear-gradient(var(--primaryColor600), var(--red));
-    background-clip: unset;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 75px;
-    letter-spacing: -0.25px;
-    text-align: left;
-  }
-  .main-donaciones .apoya-container .apoya-paragraph p {
-    color: #212121;
-  }
-  .main-donaciones .imagen-container {
-    height: 80vh;
   }
 }
 .hero-empresas {
@@ -2481,13 +2404,16 @@ footer .copyright p {
   .main-empresas .porque-container {
     padding: 5rem 10rem;
   }
+  .main-empresas .porque-container h2,
+  .main-empresas .porque-container .porque-sub-header {
+    text-align: center;
+  }
   .main-empresas .porque-container .impacto-container {
     padding: 2.25rem 1rem 0rem;
     display: flex;
   }
   .main-empresas .porque-container .impacto-container .single-impacto-container {
-    min-width: 14rem;
-    max-width: 33.33%;
+    min-width: 15rem;
   }
   .main-empresas .porque-container .impacto-container .three {
     max-width: unset;
@@ -2508,6 +2434,9 @@ footer .copyright p {
     padding: 2rem 7.18rem 2rem 8.75rem;
     order: 1;
     width: 50%;
+  }
+  .main-empresas #form .main-contacto textarea {
+    resize: none;
   }
   .main-empresas #form .main-contacto .modal .modal-content {
     width: 30%;

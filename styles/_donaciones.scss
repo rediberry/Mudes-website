@@ -1,8 +1,8 @@
 .hero-donaciones {
-    background-image: url(../assets/Donaciones.jpg);
+    background-image: url(../assets/foto-hero-dona.jpg);
     background-position: 50% 50%;
-    background-size: cover;
-    height: 40vh;
+    background-size: 110%;
+    height: 30vh;
     padding: 0 0;
 }
 
@@ -11,6 +11,11 @@
 
     .main-donaciones-text {
         padding: 2rem 1rem;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
 
         h1 {
             font-size: 2.8rem;
@@ -22,6 +27,28 @@
             font-weight: 400;
             margin: 15px 0;
             color: var(--grey-55);
+        }
+
+        span {
+            opacity: 0;
+        }
+
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+
+            button {
+                background-color: var(--primaryColor600);
+                height: 156px;
+                border: none;
+                border-radius: 10px;
+
+                img {
+                    width: 80%;
+                }
+            }
         }
     }
 
@@ -60,24 +87,28 @@
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 width: 65%;
             }
         }
 
         .donaciones-cifras {
+            span {
+                font-weight: 400;
+                font-size: 2.2rem;
+            }
+
             .single-cifra-pink {
                 border-left: var(--primaryColor600) 4px solid;
                 padding: 0 .5rem;
                 margin: 1rem 0;
 
                 span {
-                    font-weight: 900;
-                    font-size: 2.2rem;
                     color: var(--primaryColor600);
                 }
 
                 p {
+                    margin: 0;
                     font-size: small;
                     color: var(--grey-55);
                 }
@@ -89,12 +120,11 @@
                 margin: 1rem 0;
 
                 span {
-                    font-weight: 900;
-                    font-size: 2.2rem;
                     color: var(--blue);
                 }
 
                 p {
+                    margin: 0;
                     font-size: small;
                     color: var(--grey-55);
                 }
@@ -106,8 +136,6 @@
                 margin: 1rem 0;
 
                 span {
-                    font-weight: 900;
-                    font-size: 2.2rem;
                     color: var(--red);
                 }
 
@@ -118,178 +146,148 @@
             }
         }
     }
-
-    .imagen-container {
-        img {
-            width: 100%;
-        }
-    }
-
-    .apoya-container {
-        padding: 2rem 1rem;
-
-        .apoya-title {
-            h2 {
-                background: linear-gradient(var(--primaryColor600), var(--red));
-                background-clip: unset;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
-        }
-
-        .apoya-paragraph {
-            padding: 1rem 0;
-
-            p {
-                color: var(--grey-55);
-                font-weight: 400;
-            }
-        }
-
-        .ver-datos-button {
-            .ver-datos-btn {
-                cursor: pointer;
-                color: var(--primaryColor50);
-                background: var(--primaryColor600);
-                border: transparent;
-                border-radius: var(--borderRadius);
-                letter-spacing: var(--letterSpacing);
-                width: 100%;
-                padding: 0.5rem 0;
-                box-shadow: var(--shadow-1);
-                transition: var(--transition);
-                display: inline-block;
-            }
-
-            .ver-datos-btn:hover {
-                background: var(--primaryColorHover);
-                box-shadow: var(--shadow-3);
-            }
-
-            .modal {
-                .modal-dialog {
-                    .modal-content {
-                        .modal-body {
-                            .modal-block {
-                                padding-bottom: 1rem;
-
-                                h5 {
-                                    font-size: 1rem;
-                                    color: var(--grey-55);
-                                }
-
-                                p {
-                                    font-size: 1.125rem;
-                                    color: #010101;
-                                    margin-bottom: 0.5rem;
-                                }
-
-                                input {
-                                    font-size: 1.125rem;
-                                    color: #010101;
-                                    margin-bottom: 0.5rem;
-                                    font-weight: 400;
-                                    border-style: hidden;
-                                }
-
-                                i {
-                                    margin-left: 1rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
     .hero-donaciones {
-        background-position: 80% 40%;
-        height: 360px;
+        background-position: 50%;
+        background-size: cover;
+        height: 80vh;
+        width: 100vw;
+        position: absolute;
     }
 
-    .main-donaciones{
-        .main-donaciones-text{
-            text-align:start;
-            padding: 2rem 3.75rem 2rem 3.75rem;
+    .main-donaciones {
+        background: transparent;
+        position: relative;
+
+        .main-donaciones-text {
+            height: 80vh;
+            text-align: start;
+            padding: 2rem 3.75rem;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 75px;
+                letter-spacing: -0.25px;
+                color: #292929;
+            }
+
+            p {
+                color: #292929;
+                margin: 0;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                letter-spacing: 0.3px;
+                flex-grow: 1;
+            }
+
+            span {
+                color: #292929;
+                opacity: 1;
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.3px;
+            }
+
+            .buttons-container {
+                align-items: end;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+            }
         }
 
-        .recaudacion-container{
-            padding: 4rem 3.75rem 4rem 3.75rem;
-            
-            .recaudacion-title{
-                text-align:initial;
+        .recaudacion-container {
+            padding: 4rem 3.75rem;
+            position: relative;
+
+            .recaudacion-title {
+                text-align: initial;
                 padding-bottom: 2.5rem;
             }
 
-            .container-father{
-                display:flex;
+            .container-father {
+                display: flex;
+                flex-direction: column;
                 justify-content: space-between;
 
-                .container-one{
+                .container-one {
                     flex-direction: column;
-                    max-width: 50%;
                 }
-                .container-two{
-                    width: 50%;
 
-                    .donaciones-grafico{
-                        height: 100%;
-
-                        img{
-                            max-width: 70%;
-                        }
-                    }
+                .container-two .donaciones-grafico img {
+                    max-width: 50%;
                 }
             }
 
-            .donaciones-cifras{
-                padding: 2.25rem 1rem 0rem;
+            .donaciones-cifras {
+                width: 80%;
+                padding-bottom: 4rem;
+                position: absolute;
+                bottom: 0;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
                 .test-grid {
                     display: grid;
-                    grid-template-columns: 50% 50%;
+                    grid-template-rows: repeat(2, 1fr);
                     gap: 1rem;
+                    grid-column: 3/4;
+                    justify-items: end;
 
-                    .single-cifra-pink, .single-cifra-blue{
+                    .single-cifra-pink,
+                    .single-cifra-blue {
                         max-width: 60%;
                     }
                 }
+
+                .single-grid {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    align-self: center;
+                }
+
                 .three {
-                    max-width: 20%;
-                    margin-left: 35%;
+                    max-width: 50%;
+                    margin-left: 25%;
                     margin-top: 1rem;
                 }
             }
         }
 
-        .apoya-wrapper{
+        .apoya-wrapper {
             display: flex;
 
-            .imagen-container{
-                width:45%;
+            .imagen-container {
+                width: 45%;
                 order: 2;
 
-                img{
+                img {
                     height: auto;
                 }
             }
 
-            @supports(object-fit: cover){
-                .imagen-container img{
+            @supports(object-fit: cover) {
+                .imagen-container img {
                     height: 100%;
                     object-fit: cover;
                     object-position: center center;
                 }
             }
 
-            .apoya-container{
+            .apoya-container {
                 padding: 6.23rem 3.75rem 6.23rem;
-                width:55%;
+                width: 55%;
                 order: 1;
 
-                .apoya-title{
+                .apoya-title {
                     width: 75%;
                 }
             }
@@ -297,43 +295,88 @@
     }
 }
 
-@media screen and (min-width:1024px){
-    .main-donaciones{
-        .main-donaciones-text{
-            padding: 3.5rem 10rem 3.5rem 10rem;
-        }
+@media screen and (min-width:1024px) {
+    .hero-donaciones {
+        height: 140vh;
+    }
 
-        .recaudacion-container{
-            padding: 4rem 16rem 4rem 16rem;
+    .main-donaciones {
+        .main-donaciones-text {
+            padding: 1rem 5rem;
+            height: 140vh;
 
-            
-            .donaciones-cifras {
-                padding: 2.25rem 1rem 0rem;
+            img {
+                align-self: flex-start;
+            }
+
+            h1 {
+                font-weight: 600;
+                font-size: 65px;
+                line-height: 75px;
+            }
+
+            p {
+                width: 50%;
+            }
+
+            .donar-container {
                 display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-                .single-cifra-pink, .single-cifra-blue, .single-cifra-red {
-                    min-width: 14rem;
-                    max-width: 33.33%;
-                    height: 75%;
+                span {
+                    width: 25%;
+                    text-align: left;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #292929;
                 }
 
-                .three {
-                    max-width: unset;
-                    margin-left: 1rem;
+                button {
+                    max-width: 156px;
+                }
+            }
+
+        }
+
+        .recaudacion-container {
+            padding: 4rem 16rem;
+
+            .donaciones-cifras {
+                width: 60%;
+                height: 55%;
+                display: flex;
+                justify-content: space-between;
+
+                .test-grid {
+                    width: 33.33%;
+                    justify-items: left;
+
+                    .single-cifra-pink,
+                    .single-cifra-blue {
+                        max-width: 70%;
+                        max-height: 50%;
+                    }
+                }
+
+                .single-grid .single-cifra-red {
+                    max-width: none;
                 }
             }
         }
 
-        .apoya-wrapper{
-            .apoya-container{
-                padding: 3.39rem 10rem 3.39rem;
-                width:55%;
+        .apoya-wrapper {
+            .apoya-container {
+                padding: 3.39rem 10rem;
+                width: 55%;
                 order: 1;
 
-                .apoya-title{
+                .apoya-title {
                     width: 75%;
 
-                    h2{
+                    h2 {
                         font-size: 2.9rem;
                         font-weight: 700;
                     }
@@ -343,144 +386,144 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .hero-donaciones {
-        background-position-y: 50%;
-    }
+// @media screen and (min-width: 768px) {
+//     .hero-donaciones {
+//         background-position-y: 50%;
+//     }
 
-    .main-donaciones {
-        .main-donaciones-text {
-            padding: 2rem 4rem;
-        }
+//     .main-donaciones {
+//         .main-donaciones-text {
+//             padding: 2rem 4rem;
+//         }
 
-        .recaudacion-container {
-            padding: 4rem;
+//         .recaudacion-container {
+//             padding: 4rem;
 
-            .recaudacion-responsive {
-                height: 278px;
-                display: grid;
-                grid-template-columns: 20% 30% 1fr;
-                grid-template-rows: 78px 1fr;
-                gap: 1rem 2rem;
+//             .recaudacion-responsive {
+//                 height: 278px;
+//                 display: grid;
+//                 grid-template-columns: 20% 30% 1fr;
+//                 grid-template-rows: 78px 1fr;
+//                 gap: 1rem 2rem;
 
-                .recaudacion-sub-title {
-                    padding: 0;
-                    grid-column: 1/3;
-                    grid-row: 1/2;
-                }
+//                 .recaudacion-sub-title {
+//                     padding: 0;
+//                     grid-column: 1/3;
+//                     grid-row: 1/2;
+//                 }
 
-                .recaudacion-paragraph {
-                    padding: 0;
-                    grid-column: 1/3;
-                    grid-row: 2/3;
-                }
+//                 .recaudacion-paragraph {
+//                     padding: 0;
+//                     grid-column: 1/3;
+//                     grid-row: 2/3;
+//                 }
 
-                .donaciones-grafico {
-                    grid-column: 3/4;
-                    grid-row: 1/3;
+//                 .donaciones-grafico {
+//                     grid-column: 3/4;
+//                     grid-row: 1/3;
 
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
 
-            .donaciones-cifras {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
+//             .donaciones-cifras {
+//                 display: grid;
+//                 grid-template-columns: 1fr 1fr;
+//                 grid-template-rows: 1fr 1fr;
 
-                div {
-                    justify-self: center;
-                }
+//                 div {
+//                     justify-self: center;
+//                 }
 
-                .single-cifra-red {
-                    grid-column: 1/3;
-                    grid-row: 2/3;
-                }
-            }
-        }
+//                 .single-cifra-red {
+//                     grid-column: 1/3;
+//                     grid-row: 2/3;
+//                 }
+//             }
+//         }
 
-        .imagen-container {
-            width: 30%;
-            height: 60vh;
-            float: right;
+//         .imagen-container {
+//             width: 30%;
+//             height: 60vh;
+//             float: right;
 
-            img {
-                height: 100%;
-                object-fit: cover;
+//             img {
+//                 height: 100%;
+//                 object-fit: cover;
 
-            }
-        }
+//             }
+//         }
 
-        .apoya-container {
-            padding: 112px 20px 112px 60px;
-            width: 50%;
-        }
-    }
-}
+//         .apoya-container {
+//             padding: 112px 20px 112px 60px;
+//             width: 50%;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 1024px) {
-    .hero-donaciones {
-        height: 360px;
-    }
+// @media screen and (min-width: 1024px) {
+//     .hero-donaciones {
+//         height: 360px;
+//     }
 
-    .main-donaciones {
-        .main-donaciones-text {
-            width: 60%;
-            padding-left: 160px;
-        }
+//     .main-donaciones {
+//         .main-donaciones-text {
+//             width: 60%;
+//             padding-left: 160px;
+//         }
 
-        .recaudacion-container {
-            padding: 64px 260px;
+//         .recaudacion-container {
+//             padding: 64px 260px;
 
-            .recaudacion-responsive {
-                height: 50vh;
-                row-gap: 2rem;
+//             .recaudacion-responsive {
+//                 height: 50vh;
+//                 row-gap: 2rem;
 
-                .donaciones-grafico img {
-                    height: 100%;
-                }
-            }
+//                 .donaciones-grafico img {
+//                     height: 100%;
+//                 }
+//             }
 
-            .donaciones-cifras {
-                margin-top: 4rem;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 1fr;
+//             .donaciones-cifras {
+//                 margin-top: 4rem;
+//                 grid-template-columns: repeat(3, 1fr);
+//                 grid-template-rows: 1fr;
 
-                .single-cifra-red {
-                    grid-column: 3/4;
-                    grid-row: 1/2;
-                }
-            }
-        }
+//                 .single-cifra-red {
+//                     grid-column: 3/4;
+//                     grid-row: 1/2;
+//                 }
+//             }
+//         }
 
-        .apoya-container {
-            padding-left: 160px;
+//         .apoya-container {
+//             padding-left: 160px;
 
-            .apoya-dibujo img {
-                height: 80px;
-            }
+//             .apoya-dibujo img {
+//                 height: 80px;
+//             }
 
-            .apoya-title h2 {
-                background: linear-gradient(var(--primaryColor600), var(--red));
-                background-clip: unset;
-                -webkit-background-clip: text;
-                color: transparent;
-                font-size: 65px;
-                font-weight: 700;
-                line-height: 75px;
-                letter-spacing: -0.25px;
-                text-align: left;
-            }
+//             .apoya-title h2 {
+//                 background: linear-gradient(var(--primaryColor600), var(--red));
+//                 background-clip: unset;
+//                 -webkit-background-clip: text;
+//                 color: transparent;
+//                 font-size: 65px;
+//                 font-weight: 700;
+//                 line-height: 75px;
+//                 letter-spacing: -0.25px;
+//                 text-align: left;
+//             }
 
-            .apoya-paragraph p {
-                color: #212121;
-            }
-        }
+//             .apoya-paragraph p {
+//                 color: #212121;
+//             }
+//         }
 
-        .imagen-container {
-            height: 80vh;
-        }
-    }
-}
+//         .imagen-container {
+//             height: 80vh;
+//         }
+//     }
+// }
