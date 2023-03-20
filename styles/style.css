@@ -151,7 +151,8 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -205,6 +206,7 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -555,7 +557,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     justify-content: center;
   }
   .main .main-socialImpact .impact-container .a,
-  .main .main-socialImpact .impact-container .b {
+.main .main-socialImpact .impact-container .b {
     width: 45%;
   }
   .main .main-testimonials {
@@ -596,8 +598,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     display: block;
   }
   .main .main-involucrate .donacion,
-  .main .main-involucrate .empresaAliada,
-  .main .main-involucrate .voluntario {
+.main .main-involucrate .empresaAliada,
+.main .main-involucrate .voluntario {
     padding: 16px 60px;
   }
 }
@@ -617,7 +619,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     padding-right: 385px;
   }
   .main .main-socialImpact .a,
-  .main .main-socialImpact .b {
+.main .main-socialImpact .b {
     width: 30% !important;
   }
   .main .main-testimonials h3 {
@@ -645,8 +647,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     grid-column: 1/4;
   }
   .main .main-involucrate .donacion,
-  .main .main-involucrate .empresaAliada,
-  .main .main-involucrate .voluntario {
+.main .main-involucrate .empresaAliada,
+.main .main-involucrate .voluntario {
     padding: 16px;
   }
 }
@@ -732,7 +734,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 .main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -741,6 +744,14 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   }
   .main-sponsors #carousel-colaboraciones-desktop {
     display: flex;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2000px);
+    }
   }
   @keyframes scroll {
     0% {
@@ -777,7 +788,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     top: 0;
   }
   .main-sponsors #carousel-colaboraciones-desktop .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
     display: flex;
     width: 3000px;
   }
@@ -1335,6 +1347,8 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   place-items: center;
@@ -1565,6 +1579,14 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-900px);
+  }
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1574,7 +1596,8 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -1908,6 +1931,9 @@ footer .copyright p {
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
+.main-donaciones .main-donaciones-text .buttons-container a:hover {
+  opacity: unset;
+}
 .main-donaciones .main-donaciones-text .buttons-container button {
   background-color: var(--primaryColor600);
   height: 156px;
@@ -1916,6 +1942,38 @@ footer .copyright p {
 }
 .main-donaciones .main-donaciones-text .buttons-container button img {
   width: 80%;
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-header button {
+  background-color: unset;
+  height: unset;
+  border: unset;
+  border-radius: unset;
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-body .modal-block {
+  padding-bottom: 1rem;
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-body .modal-block h5 {
+  font-size: 1rem;
+  color: var(--grey-55);
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-body .modal-block p {
+  font-size: 1.125rem;
+  color: #010101;
+  margin-bottom: 0.5rem;
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-body .modal-block input {
+  font-size: 1.125rem;
+  color: #010101;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  border-style: hidden;
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-body .modal-block i {
+  margin-left: 1rem;
+}
+.main-donaciones .main-donaciones-text .buttons-container .modal .modal-dialog .modal-content .modal-body .modal-block img {
+  width: 50%;
+  height: auto;
 }
 .main-donaciones .recaudacion-container {
   background-color: var(--grey-2);
@@ -2076,7 +2134,7 @@ footer .copyright p {
     justify-items: end;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink,
-  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
+.main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
     max-width: 60%;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .single-grid {
@@ -2099,11 +2157,13 @@ footer .copyright p {
   .main-donaciones .apoya-wrapper .imagen-container img {
     height: auto;
   }
-  @supports (object-fit: cover) {
+  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
     .main-donaciones .apoya-wrapper .imagen-container img {
       height: 100%;
-      object-fit: cover;
-      object-position: center center;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center center;
+         object-position: center center;
     }
   }
   .main-donaciones .apoya-wrapper .apoya-container {
@@ -2165,7 +2225,7 @@ footer .copyright p {
     justify-items: left;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink,
-  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
+.main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
     max-width: 70%;
     max-height: 50%;
   }
@@ -2405,7 +2465,7 @@ footer .copyright p {
     padding: 5rem 10rem;
   }
   .main-empresas .porque-container h2,
-  .main-empresas .porque-container .porque-sub-header {
+.main-empresas .porque-container .porque-sub-header {
     text-align: center;
   }
   .main-empresas .porque-container .impacto-container {

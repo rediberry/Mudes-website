@@ -130,10 +130,91 @@
             transferencia
           </span>
           <div class="buttons-container">
-            <button><img src="../assets/bbva-logo.svg" alt="" /></button>
-            <button><img src="../assets/interbank-logo.svg" alt="" /></button>
-            <button><img src="../assets/paypal-logo.svg" alt="" /></button>
-            <button><img src="../assets/yape-logo.svg" alt="" /></button>
+            <!-- Button to Open the Modal -->
+            <button type="button" class="ver-datos-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalbbva"><img src="../assets/bbva-logo.svg" alt="" /></button>
+            <!-- The Modal bbva -->
+            <div class="modal" id="myModalbbva">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">BBVA</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="modal-block">
+                      <h5>Cuenta Fácil</h5>
+                      <p>0011-0187-0200201661</p>
+                      <h5>Código CCI</h5>
+                      <input type="text" value="01118700020020166122" id="myInput" readonly /><i class="fas fa-copy" onclick="myFunction()"></i>
+                      <h5>Titular de la cuenta</h5>
+                      <p>Fiorella Trujillo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="ver-datos-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalinterbank"><img src="../assets/interbank-logo.svg" alt="" /></button>
+            <!-- The Modal interbank-->
+            <div class="modal" id="myModalinterbank">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Interbank</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                          <div class="modal-block">
+                              <h5>Nro. de cuenta en soles</h5>
+                              <p>200-3003783241</p>
+                              <h5>Código CCI</h5>
+                              <input type="text" value="003200000300378324134" id="myInput2" readonly /><i class="fas fa-copy" onclick="myFunction2()"></i>
+                          </div>
+                          <div class="modal-block">
+                              <h5>Nro. de cuenta en dólares</h5>
+                              <p>200-3003783259</p>
+                              <h5>Código CCI</h5>
+                              <input type="text" value="00320000300378325936" id="myInput3" readonly /><i class="fas fa-copy" onclick="myFunction3()"></i>
+                          </div>
+                          <div class="modal-block">
+                              <h5>Titular de la cuenta:</h5>
+                              <p>Mujeres Unidas para el Desarrollo Social</p>
+                              <h5>CUIT del titular:</h5>
+                              <p>30708357363</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            <button type="button"><a href="https://www.paypal.com/donate/?hosted_button_id=8YSFWZF9ZNEPS" target="_blank" rel="noopener noreferrer"><img src="../assets/paypal-logo.svg" alt="link a payPal" /></a></button>
+
+            <button type="button" class="ver-datos-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalyape"><img src="../assets/yape-logo.svg" alt="" /></button>
+            <!-- The Modal yape -->
+            <div class="modal" id="myModalyape">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Yape</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="modal-block">
+                      <h5>Guarda el número y yapea al</h5>
+                      <input type="text" value="936088486" id="myInput4" readonly /><i class="fas fa-copy" onclick="myFunction4()"></i>
+                      <h5>O abre la app de Yape y escanea este código QR</h5>
+                      <img src="../assets/QR Yape.jpg" alt="código QR para yapear">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -344,6 +425,28 @@
       function myFunction2() {
         // Get the text field
         var copyText = document.getElementById("myInput2");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+      }
+      function myFunction3() {
+        // Get the text field
+        var copyText = document.getElementById("myInput3");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+      }
+      function myFunction4() {
+        // Get the text field
+        var copyText = document.getElementById("myInput4");
 
         // Select the text field
         copyText.select();
