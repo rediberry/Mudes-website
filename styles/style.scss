@@ -43,9 +43,27 @@ html {
     /*var(--blue)*/
     --red: #E6332F;
     /*var(--red)*/
+
     /* fonts  */
-    --headingFont: 'Inter', sans-serif;
-    --bodyFont: 'Inter', sans-serif;
+    @font-face {
+        font-family: sharpGrotesk-sb-15;
+        src: url(./fonts/SharpGrotesk-SemiBold15.otf);
+    }
+
+    @font-face {
+        font-family: sharpGrotesk-sb-20;
+        src: url(./fonts/SharpGrotesk-SemiBold20.otf);
+    }
+
+    @font-face {
+        font-family: sharpGrotesk-b-20;
+        src: url(./fonts/SharpGrotesk-Book20.otf);
+    }
+
+    --headingFont: 'Inter',
+    sans-serif;
+    --bodyFont: 'Inter',
+    sans-serif;
     --smallText: 0.7em;
     /* rest of the vars */
     --backgroundColor: var(--grey-2);
@@ -57,10 +75,14 @@ html {
     --fixed-width: 600px;
     --fluid-width: 90vw;
     /* box shadow*/
-    --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 a {
@@ -82,17 +104,17 @@ h1 {
     color: var(--grey-55);
     font-size: 2em;
     font-weight: 100;
-    font-family: 'Inter', sans-serif;
+    font-family: 'sharpGrotesk-sb-15', 'Inter', sans-serif;
 }
 
 h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'sharpGrotesk-sb-20', 'Inter', sans-serif;
     font-weight: 400;
 }
 
 h3 {
     color: var(--primaryColor600);
-    font-family: 'Inter', sans-serif;
+    font-family: 'sharpGrotesk-sb-20', 'Inter', sans-serif;
 }
 
 a.actual-page {
@@ -104,7 +126,7 @@ ul {
 }
 
 p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'sharpgrotesk-b-20', 'Inter', sans-serif;
     color: var(--black);
     font-weight: 400;
 }
@@ -125,6 +147,7 @@ p {
 
         span {
             color: #fff;
+            font-family: 'sharpgrotesk-sb-15', 'Inter', sans-serif;
             font-weight: 700;
             font-size: 45px;
             margin-bottom: 1rem;

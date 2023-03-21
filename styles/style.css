@@ -45,8 +45,10 @@ html {
   --red: #E6332F;
   /*var(--red)*/
   /* fonts  */
-  --headingFont: "Inter", sans-serif;
-  --bodyFont: "Inter", sans-serif;
+  --headingFont: "Inter",
+  sans-serif;
+  --bodyFont: "Inter",
+  sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-2);
@@ -58,10 +60,32 @@ html {
   --fixed-width: 600px;
   --fluid-width: 90vw;
   /* box shadow*/
-  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+  0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+@font-face {
+  :root {
+    font-family: sharpGrotesk-sb-15;
+    src: url(./fonts/SharpGrotesk-SemiBold15.otf);
+  }
+}
+@font-face {
+  :root {
+    font-family: sharpGrotesk-sb-20;
+    src: url(./fonts/SharpGrotesk-SemiBold20.otf);
+  }
+}
+@font-face {
+  :root {
+    font-family: sharpGrotesk-b-20;
+    src: url(./fonts/SharpGrotesk-Book20.otf);
+  }
 }
 
 a {
@@ -82,17 +106,17 @@ h1 {
   color: var(--grey-55);
   font-size: 2em;
   font-weight: 100;
-  font-family: "Inter", sans-serif;
+  font-family: "sharpGrotesk-sb-15", "Inter", sans-serif;
 }
 
 h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "sharpGrotesk-sb-20", "Inter", sans-serif;
   font-weight: 400;
 }
 
 h3 {
   color: var(--primaryColor600);
-  font-family: "Inter", sans-serif;
+  font-family: "sharpGrotesk-sb-20", "Inter", sans-serif;
 }
 
 a.actual-page {
@@ -104,7 +128,7 @@ ul {
 }
 
 p {
-  font-family: "Inter", sans-serif;
+  font-family: "sharpgrotesk-b-20", "Inter", sans-serif;
   color: var(--black);
   font-weight: 400;
 }
@@ -125,6 +149,7 @@ p {
 }
 .hero div span {
   color: #fff;
+  font-family: "sharpgrotesk-sb-15", "Inter", sans-serif;
   font-weight: 700;
   font-size: 45px;
   margin-bottom: 1rem;
@@ -151,8 +176,7 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -206,7 +230,6 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -557,7 +580,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     justify-content: center;
   }
   .main .main-socialImpact .impact-container .a,
-.main .main-socialImpact .impact-container .b {
+  .main .main-socialImpact .impact-container .b {
     width: 45%;
   }
   .main .main-testimonials {
@@ -598,8 +621,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     display: block;
   }
   .main .main-involucrate .donacion,
-.main .main-involucrate .empresaAliada,
-.main .main-involucrate .voluntario {
+  .main .main-involucrate .empresaAliada,
+  .main .main-involucrate .voluntario {
     padding: 16px 60px;
   }
 }
@@ -619,7 +642,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     padding-right: 385px;
   }
   .main .main-socialImpact .a,
-.main .main-socialImpact .b {
+  .main .main-socialImpact .b {
     width: 30% !important;
   }
   .main .main-testimonials h3 {
@@ -647,8 +670,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     grid-column: 1/4;
   }
   .main .main-involucrate .donacion,
-.main .main-involucrate .empresaAliada,
-.main .main-involucrate .voluntario {
+  .main .main-involucrate .empresaAliada,
+  .main .main-involucrate .voluntario {
     padding: 16px;
   }
 }
@@ -734,8 +757,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 .main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -744,14 +766,6 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   }
   .main-sponsors #carousel-colaboraciones-desktop {
     display: flex;
-  }
-  @-webkit-keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-2000px);
-    }
   }
   @keyframes scroll {
     0% {
@@ -788,8 +802,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     top: 0;
   }
   .main-sponsors #carousel-colaboraciones-desktop .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
     display: flex;
     width: 3000px;
   }
@@ -1347,8 +1360,6 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   place-items: center;
@@ -1579,14 +1590,6 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-900px);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1596,8 +1599,7 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -2134,7 +2136,7 @@ footer .copyright p {
     justify-items: end;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink,
-.main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
     max-width: 60%;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .single-grid {
@@ -2157,13 +2159,11 @@ footer .copyright p {
   .main-donaciones .apoya-wrapper .imagen-container img {
     height: auto;
   }
-  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  @supports (object-fit: cover) {
     .main-donaciones .apoya-wrapper .imagen-container img {
       height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: center center;
-         object-position: center center;
+      object-fit: cover;
+      object-position: center center;
     }
   }
   .main-donaciones .apoya-wrapper .apoya-container {
@@ -2225,7 +2225,7 @@ footer .copyright p {
     justify-items: left;
   }
   .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-pink,
-.main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
+  .main-donaciones .recaudacion-container .donaciones-cifras .test-grid .single-cifra-blue {
     max-width: 70%;
     max-height: 50%;
   }
@@ -2465,7 +2465,7 @@ footer .copyright p {
     padding: 5rem 10rem;
   }
   .main-empresas .porque-container h2,
-.main-empresas .porque-container .porque-sub-header {
+  .main-empresas .porque-container .porque-sub-header {
     text-align: center;
   }
   .main-empresas .porque-container .impacto-container {
