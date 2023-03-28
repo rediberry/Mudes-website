@@ -1025,6 +1025,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   }
   .main-queHacemos .description .text {
     display: flex;
+    gap: 10px;
   }
   .main-queHacemos .main-pilares .pilar-container {
     display: grid;
@@ -2178,6 +2179,7 @@ footer .copyright p {
 @media screen and (min-width: 1024px) {
   .hero-donaciones {
     height: 140vh;
+    width: 100%;
   }
   .main-donaciones .main-donaciones-text {
     padding: 1rem 5rem;
@@ -2197,11 +2199,12 @@ footer .copyright p {
   .main-donaciones .main-donaciones-text .donar-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 20px;
   }
   .main-donaciones .main-donaciones-text .donar-container span {
     width: 25%;
-    text-align: left;
+    text-align: right;
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;

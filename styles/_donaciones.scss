@@ -40,7 +40,7 @@
             gap: 1rem;
 
             a:hover {
-                opacity:unset;
+                opacity: unset;
             }
 
             button {
@@ -57,14 +57,15 @@
             .modal {
                 .modal-dialog {
                     .modal-content {
-                        .modal-header{
-                            button{
-                                background-color:unset;
+                        .modal-header {
+                            button {
+                                background-color: unset;
                                 height: unset;
                                 border: unset;
                                 border-radius: unset;
                             }
                         }
+
                         .modal-body {
                             .modal-block {
                                 padding-bottom: 1rem;
@@ -86,7 +87,7 @@
                                     margin-bottom: 0.5rem;
                                     font-weight: 400;
                                     border-style: hidden;
-                                    
+
                                 }
 
                                 i {
@@ -351,6 +352,7 @@
 @media screen and (min-width:1024px) {
     .hero-donaciones {
         height: 140vh;
+        width: 100%;
     }
 
     .main-donaciones {
@@ -375,11 +377,12 @@
             .donar-container {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-end;
+                gap: 20px;
 
                 span {
                     width: 25%;
-                    text-align: left;
+                    text-align: right;
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 500;
